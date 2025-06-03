@@ -45,6 +45,6 @@ or l d email ly _at_ gmail
 
 ### See also
 
-[Low Background Web](low-background)
+[Low Background Web](low-background) change 2018 to 2023 in that text.
 
-[Dead Internet Theory](https://en.wikipedia.org/wiki/Dead_Internet_theory) (wikipedia)
+[Dead Internet Theory](https://en.wikipedia.org/wiki/Dead_Internet_theory) (wikipedia) while the dates like 2016 makes this a consiparacy theory, sadly as of today, it may be true.
