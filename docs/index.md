@@ -44,8 +44,8 @@ or l d email ly _at_ gmail
 -->
 
 ### See also
+(External links)
 
-<!-- local copy until origin is fixed, pending PR#1 -->
-[Low Background Web](low-background) change 2018 to 2023 in that text.
+See interesting post about the [Low Background Web](https://blog.mauri870.com/posts/the-low-background-web/) - just that you want IMO to change 2018 to 2023 in that text.
 
 [Dead Internet Theory](https://en.wikipedia.org/wiki/Dead_Internet_theory) (wikipedia) while the dates like 2016 makes this a consiparacy theory, sadly as of today, it may be true.
