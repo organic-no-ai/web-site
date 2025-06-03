@@ -24,6 +24,11 @@ Would be nice to have something like this on some hand crafted software:
 
 ![Organic No AI stamp](organic-no-ai.png)
 
+<!--
+if you are a human designer and want to contribute a proper, no AI logo for this, please contact me (see github)
+or l d email ly _at_ gmail
+-->
+
 ### See also
 
 [Low Background Web](low-background)
