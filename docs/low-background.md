@@ -5,7 +5,8 @@ title: The Low-Background Web
 # The Low-Background Web
 Apr 6, 2025 · 642 words · 4 minute read
 
-Stolen^H^H^HCopied for a good cause here from [blog.mauri870.com/posts/the-low-background-web](https://blog.mauri870.com/posts/the-low-background-web/) to make it readable (can't read the grey on grey theme there)
+_This copy of [blog.mauri870.com/posts/the-low-background-web](https://blog.mauri870.com/posts/the-low-background-web/) will disappear as soon as this [github PR is merged](https://github.com/organic-no-ai/web-site/pull/1) which will happen as soon as the missing https://blog.mauri870.com/css/style.css is fixed so chrome user using dark mode can actually read the content.
+Ps: I didn't know and there was no way to contact the author to report that issue and ask if it was ok to copy, contacted since then and waiting to merge._
 
 ## 1. What’s low-background anyway?
 
