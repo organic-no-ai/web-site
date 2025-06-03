@@ -19,15 +19,12 @@
   </head>
   <body>
       <div id="header">
-        <img src="/organic-no-ai.png" alt="Organic, No AI Home logo" style="width: 64px; height: 64px; float: right;">
-        <nav>
-          <ul>
-            <li class="fork"><a href="/">Organic, No AI Home</a></li>
-            {% if site.show_downloads %}
-              <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-              <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-              <li class="title">DOWNLOADS</li>
-            {% endif %}
+        <nav style="background: none;">
+          <ul style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0; background: none;">
+            <li style="background: none;">
+              <img src="/logo_smaller.png" alt="Organic, No AI Home logo" style="max-width: 50px; height: auto; display: block; margin-right: 12px;">
+            </li>
+            <li class="fork" style="background: none;"><a href="/">Organic, No AI: Home</a></li>
           </ul>
         </nav>
       </div><!-- end header -->
