@@ -4,13 +4,24 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     if: github.event.pull_request.head.repo.full_name == github.repository  # Only run on PRs from the same repo
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -25,16 +36,18 @@ jobs:
         working-directory: docs
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build -d _site
+        run: bundle exec jekyll build -d ../_site
         working-directory: docs
 
-      - name: Deploy preview to branch
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_site
-          publish_branch: pr-preview/pr-${{ github.event.pull_request.number }}
+          path: ./_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Output Preview URL
         run: |
-          echo "Preview: https://organic-no-ai.github.io/web-site/?preview=pr-${{ github.event.pull_request.number }}"
+          echo "Preview URL: ${{ steps.deployment.outputs.page_url }}"
