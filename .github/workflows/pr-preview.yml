@@ -36,7 +36,10 @@ jobs:
         working-directory: docs
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build -d ../_site
+        run: |
+          # Create a _config.preview.yml that sets baseurl for preview
+          echo "baseurl: /preview/pr-${{ github.event.pull_request.number }}" > _config.preview.yml
+          bundle exec jekyll build -d ../_site --config _config.yml,_config.preview.yml
         working-directory: docs
 
       - name: Upload artifact
@@ -50,4 +53,4 @@ jobs:
 
       - name: Output Preview URL
         run: |
-          echo "Preview URL: ${{ steps.deployment.outputs.page_url }}"
+          echo "Preview URL: ${{ steps.deployment.outputs.page_url }}/preview/pr-${{ github.event.pull_request.number }}"
