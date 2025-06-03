@@ -31,4 +31,5 @@ jobs:
           publish_branch: pr-preview/pr-${{ github.event.pull_request.number }}
 
       - name: Output Preview URL
-        run: echo "Preview: https://organic-no-ai.github.io/web-site/?preview=pr-${{ github.event.pull_request.number }}"
+        run: |
+          echo "Preview: https://organic-no-ai.github.io/web-site/?preview=pr-${{ github.event.pull_request.number }}"
