@@ -23,3 +23,7 @@ I don't know... ideas welcome...
 Would be nice to have something like this on some hand crafted software:
 
 ![Organic No AI stamp](organic-no-ai.png)
+
+### See also
+
+[Low Background Web](low-background)
