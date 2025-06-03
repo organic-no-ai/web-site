@@ -18,6 +18,20 @@ How to find out a system or piece of code had no AI involved... is indeed very t
 
 I don't know... ideas welcome...
 
+Some possibilities but kinda constraining:
+
+- Process-based Proof (in addition to electronic signature of content, but humans are good at cheating)
+    - Require creation tools to record edit history (keystrokes, diffs, timestamps).
+	- Only accept content with continuous creation logs—like a time-lapse.
+	- AI use shows up as copy-paste blobs or abrupt, large insertions.
+
+- Restricted Environment with Attestation (a bit "much"... kinda worse than "no internet" allowed...)
+	- Use a sandbox (like a signed Linux container or remote devbox):
+	- No AI access (no internet or LLM API).
+	- Actions are logged and attested.
+	- System emits a signed proof: “This content was created in a cleanroom.”
+
+
 ### (Certified) Organic code - No AI involved stamp:
 
 Would be nice to have something like this on some hand crafted software:
@@ -32,3 +46,5 @@ or l d email ly _at_ gmail
 ### See also
 
 [Low Background Web](low-background)
+
+[Dead Internet Theory](https://en.wikipedia.org/wiki/Dead_Internet_theory) (wikipedia)
